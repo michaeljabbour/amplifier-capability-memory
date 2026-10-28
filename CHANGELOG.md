@@ -2,6 +2,8 @@
 
 ## Public Data distribution — 2026-10-28
 
+- Clarified platform scopes: Data has macOS and Ubuntu native acceptance; the complete Memory evidence quickstart was checked on macOS only. Ubuntu contract tests are separate from native Memory runtime acceptance.
+
 - All seven native modules and their locks now pin the reviewed public Data export, with stable package/import identities and one-way ownership.
 - Added a no-model native evidence quickstart and explicit durable installation checks. The functional gate now uses installed public packages rather than requiring a private sibling checkout. Original private Data history stays private; no existing store is migrated by installation.
 

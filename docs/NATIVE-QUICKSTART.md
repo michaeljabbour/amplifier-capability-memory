@@ -4,7 +4,7 @@ Use this when you want an explicit, inspectable local record of project evidence
 
 ## What you need
 
-Python 3.11+ and Git. Durable storage is built by the separately released Data library, so a Rust toolchain (`cargo` and `rustc`) and a native compiler are required for this source install. The reviewed prebuilt Data wheel is available for macOS Apple silicon; other platforms need a source build and their native acceptance remains unverified.
+Python 3.11+ and Git. Durable storage is built by the separately released Data library, so a Rust toolchain (`cargo` and `rustc`) and a native compiler are required for this source install. The reviewed prebuilt Data wheel is available for macOS Apple silicon. Data itself also passes source-built native acceptance on Ubuntu 24.04/Python 3.12. The Memory evidence quickstart below was checked on macOS Apple silicon/Python 3.12; its Linux end-to-end acceptance has not been run. Other platforms need a source build and their Memory runtime acceptance remains unverified.
 
 Start in an empty directory. These commands create a new virtual environment and a new fictional test log in that directory.
 
@@ -30,4 +30,4 @@ Remove the fictional log and `.venv` when finished. Never point an example at an
 
 ## What has been checked
 
-The public Data wheel and source resolve anonymously. A clean installed native Memory/Data pair was checked with two scoped consumers, exact Cell regeneration, separate-process evidence search and durable close/reopen. Tests use temporary fictional data. This is functional acceptance for the narrow native evidence path; it does not establish better answers, universal host support or a production migration.
+The public Data wheel and source resolve anonymously. On 2026-10-28, a clean installed native Memory/Data pair was checked on macOS Apple silicon/Python 3.12 with two scoped consumers, exact Cell regeneration, separate-process evidence search and durable close/reopen. Data’s separate Ubuntu native checks do not establish Memory’s Linux runtime acceptance. Tests use temporary fictional data. This is functional acceptance for the narrow native evidence path; it does not establish better answers, universal host support or a production migration.
