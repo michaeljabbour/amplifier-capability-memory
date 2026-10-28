@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-28",
+  "status": "local-functional-baseline",
+  "source_commit": "806148c47ae5be969bc4da5cc47d1e490abd04a4",
+  "python": "3.12.5",
+  "fixture_content": "fictional",
+  "model_calls": 0,
+  "notes": "573 native module tests passed, 4 skips; actual native two-consumer and no-host evidence checks also passed. Private foundation access remains a distribution gate.",
+  "limitations": [
+    "Portable method installation is independent; native persistence depends on the separate amplifier-data substrate and supported adapters."
+  ],
+  "files": {
+    "native.log": "107e7ddc2296f1bdd9b331d15b242e53090d6a9609990799cb82359d0271c4ff",
+    "functional.log": "584a6b74822a92a3340ba01897277608586c8e6e59bded6dddca86ad7c4a6122"
+  }
+}

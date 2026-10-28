@@ -1,4 +1,14 @@
-# amplifier-bundle-memory
+# Memory
+
+Keep scoped evidence and derived facts retrievable beyond one agent session.
+
+## Consolidated capability
+
+Portable method: [skills/memory/SKILL.md](skills/memory/SKILL.md). Install with `python3 scripts/capability.py install --dest ~/.agents/skills`. See [consolidation and runtime boundaries](docs/CONSOLIDATION.md). The retained source guide below documents the optional original host integration and historical evidence; it is not a new outcome claim.
+
+## Retained source guide
+
+### amplifier-bundle-memory
 
 A local-first, three-layer memory system for [Amplifier](https://github.com/microsoft/amplifier), plus [project-context](https://github.com/michaeljabbour/project-context) coordination files.
 

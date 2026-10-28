@@ -46,6 +46,7 @@ dependencies = [
 tool-memory = "amplifier_module_tool_memory:mount"
 
 [project.scripts]
+memory-evidence = "amplifier_module_tool_memory.evidence_cli:main"
 # Cold-path consolidation pipeline nodes (invoked by pipelines/curate.dot).
 memory-load-captures = "amplifier_module_tool_memory.scripts.load_captures:main"
 memory-write-cells = "amplifier_module_tool_memory.scripts.write_cells:main"

@@ -21,3 +21,5 @@ build/
 !.amplifier/digital-twin-universe/profiles/
 .amplifier/digital-twin-universe/profiles/*
 !.amplifier/digital-twin-universe/profiles/*.yaml
+
+_site/

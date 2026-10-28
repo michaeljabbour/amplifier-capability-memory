@@ -1,0 +1,7 @@
+test_standalone_native_cli_has_no_host_or_embedding_requirement (__main__.Gate.test_standalone_native_cli_has_no_host_or_embedding_requirement) ... ok
+test_two_consumers_share_native_kernel_and_survive_restart (__main__.Gate.test_two_consumers_share_native_kernel_and_survive_restart) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.506s
+
+OK

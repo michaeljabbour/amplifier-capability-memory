@@ -1,3 +1,7 @@
+# Consolidation handoff — 2026-10-28
+
+Memory remains a consumer of the separately owned amplifier-data substrate. No data is migrated and no replacement storage implementation ships in this skill. A private-source foundation integration gate remains explicit. A SQLite prototype was moved outside the target and is not a product backend. The portable method now distinguishes evidence, facts and navigation and removes unsupported fresh retrieval claims. Original native modules and historical records are retained below.
+
 # Handoff
 
 *Last updated: 2026-09-28 -- merged origin/main (18 commits: v2.0.2 release, incremental fold caching + numpy vector search + automation opt-out, stale-daemon retirement, sub-session skip) into `feat/memory-layers`'s three-layer memory (D26). See PROVENANCE.md for the merge resolution notes.*

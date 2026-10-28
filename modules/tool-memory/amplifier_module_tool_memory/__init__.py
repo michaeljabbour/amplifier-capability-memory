@@ -29,7 +29,14 @@ from collections.abc import Iterator
 from pathlib import Path
 from typing import Any
 
-from amplifier_core import Tool, ToolResult  # type: ignore
+try:
+    from amplifier_core import Tool, ToolResult  # type: ignore
+except ModuleNotFoundError as exc:
+    if exc.name != "amplifier_core":
+        raise
+    # The standalone evidence/store API is reusable without a host. The actual
+    # MemoryTool still refuses construction until its host peer is installed.
+    Tool, ToolResult = object, None
 
 from ._version import __version__
 from .client import ensure_daemon
@@ -334,6 +341,8 @@ class MemoryTool(Tool):
         bridge_emit: SyncBridge | None = None,
         emit_events: bool = True,
     ) -> None:
+        if ToolResult is None:
+            raise RuntimeError("MemoryTool requires the Amplifier host; use memory-evidence for standalone native storage.")
         super().__init__()
         self._bridge_emit: SyncBridge = bridge_emit or NOOP_SYNC_BRIDGE
         # T4.1: gate for memory:retrieved emission (search/facts/index ops).

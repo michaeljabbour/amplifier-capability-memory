@@ -1,0 +1,90 @@
+{
+  "id": "memory",
+  "display_name": "Memory",
+  "kind": "skill",
+  "promise": "Keep scoped evidence and derived facts retrievable beyond one agent session.",
+  "audience": "People and agents who need inspectable, durable project memory.",
+  "trigger": "Remember, retrieve, revise or inspect durable project evidence.",
+  "skill_path": "skills/memory",
+  "modes": [
+    {
+      "name": "Remember",
+      "when": "Evidence deserves durable retention.",
+      "output": "Verbatim evidence scoped to its project and source."
+    },
+    {
+      "name": "Retrieve",
+      "when": "A current task needs relevant past evidence.",
+      "output": "Scoped source-linked results with currency qualified."
+    },
+    {
+      "name": "Maintain",
+      "when": "A claim changed or retained records need review.",
+      "output": "Explicit supersession, export or authorized forgetting."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Fictional worked example",
+      "brief": "A fictional task illustrating Memory.",
+      "before": "A remembered conclusion is reused as current fact with no source.",
+      "after": "Scoped evidence and a provenance-linked superseding fact preserve what was known and when.",
+      "why": "Durable retrieval stays separate from unverified claims of current truth.",
+      "fictional": true
+    }
+  ],
+  "boundaries": [
+    "Portable method installation is independent; native persistence depends on the separate amplifier-data substrate and supported adapters."
+  ],
+  "install_commands": [
+    "python3 scripts/capability.py install --dest ~/.agents/skills"
+  ],
+  "runtime_install_commands": [
+    "python3 -m pip install ../amplifier-data",
+    "python3 -m pip install --no-deps ./modules/tool-memory",
+    "python3 skills/memory/scripts/runtime_doctor.py"
+  ],
+  "verification": [
+    {
+      "name": "Functional acceptance",
+      "command": "python3 scripts/functional_gate.py",
+      "expected": "Supplied fictional tasks exercise actual mechanisms and failure boundaries.",
+      "status": "passed",
+      "evidence": "573 native module tests passed, 4 skips; actual native two-consumer and no-host evidence checks also passed. Private foundation access remains a distribution gate."
+    },
+    {
+      "name": "Native host acceptance",
+      "command": "See retained source integration guide",
+      "expected": "Actual provider/host/desktop/daemon/runner acceptance for the selected adapter.",
+      "status": "not-run",
+      "evidence": "No live model, real desktop transaction, invitation, deployment or production data migration was performed by this functional baseline."
+    },
+    {
+      "name": "Storage ownership and runtime",
+      "command": "python3 skills/memory/scripts/runtime_doctor.py",
+      "expected": "Identify the separately owned private foundation and native durability.",
+      "status": "passed",
+      "evidence": "Actual amplifier-data 0.2.0 Rust kernel installed locally; no user store opened or migrated. Public source access remains unavailable."
+    }
+  ],
+  "sources": [
+    {
+      "repo": "amplifier-bundle-memory",
+      "commit": "806148c47ae5be969bc4da5cc47d1e490abd04a4",
+      "paths": [
+        "context/reflection-rubric.md",
+        "agents",
+        "modules",
+        "context"
+      ],
+      "license": "MIT",
+      "role": "Primary retained owner history, mechanisms and records; portable method consolidates the listed entry points."
+    }
+  ],
+  "consolidation": [
+    "One portable method entry with mode references; original native engines, agents and records retained as optional adapters."
+  ],
+  "docs": [
+    "docs/CONSOLIDATION.md"
+  ]
+}
