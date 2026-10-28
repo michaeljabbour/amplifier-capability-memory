@@ -216,7 +216,7 @@ amplifier run "start a session"
 > toolchain is the install-time prerequisite; installing this bundle's
 > pinned amplifier-data git dependency builds it automatically via maturin).
 
-> **Migrating existing data** from a pre-2.0.0 install: see "Migrating from a legacy vendor store" in `skills/memory/SKILL.md`, or run `amplifier-memory-import --verify` after installing the `[migrate]` extra.
+> **Existing stores:** this release has no supported importer for the older project-memory SQLite store, the standalone memories SQLite store, or the former vendor store. The historical importer and its migrate extra were removed. Preserve the original store and its schema before changing backends; follow the [legacy-store and export boundaries](docs/LEGACY-STORES.md). The native evidence export is a bounded view, not a full-fidelity backup. Independent public native installation still needs the separately owned Data distribution; publishing this portable method does not make private Data available.
 
 ---
 
