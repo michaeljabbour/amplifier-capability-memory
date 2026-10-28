@@ -216,7 +216,7 @@ amplifier run "start a session"
 > toolchain is the install-time prerequisite; installing this bundle's
 > pinned amplifier-data git dependency builds it automatically via maturin).
 
-> **Existing stores:** this release has no supported importer for the older project-memory SQLite store, the standalone memories SQLite store, or the former vendor store. The historical importer and its migrate extra were removed. Preserve the original store and its schema before changing backends; follow the [legacy-store and export boundaries](docs/LEGACY-STORES.md). The native evidence export is a bounded view, not a full-fidelity backup. Independent public native installation still needs the separately owned Data distribution; publishing this portable method does not make private Data available.
+> **Existing stores:** an explicit read-only archive bridge supports Project Memory SQLite schema 1's three source tables. It preserves every row, column and SQLite value type, then can file opaque archival records into a **new** native log through the installed Memory/Data APIs. It does not adopt facts or convert behavior. Standalone/vendor stores remain unsupported; the former vendor importer and migration extra were removed. Follow the [legacy-store and export boundaries](docs/LEGACY-STORES.md). The separate native evidence-view export is not a full-fidelity backup. Public native import still needs the separately owned Data distribution; publishing this portable method does not make private Data available.
 
 ---
 

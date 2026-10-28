@@ -85,3 +85,8 @@ jobs:
             tests/test_salience_gate.py \
             tests/test_usage_weighting.py \
             -v
+
+      - name: Test bounded legacy SQLite archive bridge
+        # Export is stdlib-only. The native Data roundtrip is reported as a
+        # separate skip here until an authorized Data distribution is available.
+        run: uv run python tests/test_legacy_sqlite_archive.py

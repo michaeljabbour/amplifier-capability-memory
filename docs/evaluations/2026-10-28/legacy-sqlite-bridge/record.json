@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-28",
+  "scope": "Fictional temporary Project Memory SQLite schema1 fixtures only",
+  "tests": {
+    "command": "PYTHONPATH=modules/tool-memory ../../.venv-data-public/bin/python tests/test_legacy_sqlite_archive.py",
+    "passed": 8,
+    "skipped": 0,
+    "source_db_wal_shm_byte_equality": true,
+    "live_writer_change_rejected": true,
+    "stat_change_rejected": true,
+    "unknown_schema_columns_rejected": true,
+    "malformed_artifact_before_store_creation": true,
+    "raw_capture_rows_exported_without_truncation": 10005,
+    "typed_null_blob_text_integer_real_controls": true,
+    "native_archival_records_roundtripped": 6,
+    "separate_process_durable_restart": true,
+    "unknown_side_table_rejected": true
+  },
+  "Data_wheel_sha256": "8fd75ec51bc2ce56321ea7b0b4836a1f71d1676772a84a5adb6e0349e842da10",
+  "source_limits": {
+    "DB_WAL_SHM_bytes": 64000000,
+    "artifact_bytes": 128000000,
+    "source_tables": [
+      "memories",
+      "raw_captures",
+      "schema_meta"
+    ],
+    "other_formats": "unsupported, not silently converted"
+  },
+  "new_storage_backend": false,
+  "Data_source_or_export_changed": false,
+  "real_user_stores_opened": 0,
+  "provider_calls": 0,
+  "user_migrations": 0,
+  "public_native_Data_gate": "Owner approval/distribution still required; no private Data code published.",
+  "limits": "Source fingerprints detect observed instability but do not lock out concurrent writers; quiesce first. Archive covers3 source tables, not every SQLite internal/FTS structure or legacy runtime behavior.",
+  "Data_wheel_installed_source_hash_reverified": true
+}
