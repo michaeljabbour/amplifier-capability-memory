@@ -3,7 +3,7 @@
 ## Public Data distribution — 2026-10-28
 
 - All seven native modules and their locks now pin the reviewed public Data export, with stable package/import identities and one-way ownership.
-- Added a no-model native evidence quickstart and explicit durable installation checks. Original private Data history stays private; no existing store is migrated by installation.
+- Added a no-model native evidence quickstart and explicit durable installation checks. The functional gate now uses installed public packages rather than requiring a private sibling checkout. Original private Data history stays private; no existing store is migrated by installation.
 
 
 ## [2.2.0] — 2026-09-28

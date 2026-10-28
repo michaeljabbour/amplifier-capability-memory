@@ -38,11 +38,12 @@ class Gate(unittest.TestCase):
             reopened.close()
 
     def test_standalone_native_cli_has_no_host_or_embedding_requirement(self):
-        data_source=ROOT.parent/'amplifier-data'
-        self.assertTrue(data_source.exists(),'Authorized foundation source is an explicit test prerequisite')
+        import amplifier_data
+        self.assertTrue(amplifier_data.RUST_AVAILABLE, 'Install the public native Data distribution first')
         with tempfile.TemporaryDirectory() as d:
-            env=dict(os.environ,PYTHONPATH=os.pathsep.join([str(ROOT/'modules/tool-memory'),str(data_source)]))
-            base=[sys.executable,'-S','-m','amplifier_module_tool_memory.evidence_cli','--store',str(Path(d)/'new.log')]
+            env=dict(os.environ)
+            env.pop('PYTHONPATH',None)
+            base=[sys.executable,'-m','amplifier_module_tool_memory.evidence_cli','--store',str(Path(d)/'new.log')]
             def run(args):
                 r=subprocess.run(base+args,cwd=d,env=env,capture_output=True,text=True)
                 self.assertEqual(r.returncode,0,r.stderr);return json.loads(r.stdout)
