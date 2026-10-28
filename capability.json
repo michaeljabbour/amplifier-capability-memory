@@ -40,7 +40,7 @@
     "python3 scripts/capability.py install --dest ~/.agents/skills"
   ],
   "runtime_install_commands": [
-    "python3 -m pip install ../amplifier-data",
+    "python3 -m pip install 'git+https://github.com/michaeljabbour/amplifier-tool-data@40450647367db2a2b5058bea1d81a6d248c24c94'",
     "python3 -m pip install --no-deps ./modules/tool-memory",
     "python3 skills/memory/scripts/runtime_doctor.py"
   ],
@@ -50,7 +50,7 @@
       "command": "python3 scripts/functional_gate.py",
       "expected": "Supplied fictional tasks exercise actual mechanisms and failure boundaries.",
       "status": "passed",
-      "evidence": "573 native module tests passed, 4 skips; actual native two-consumer and no-host evidence checks also passed. Private foundation access remains a distribution gate."
+      "evidence": "573 native module tests passed, 4 skips; actual native two-consumer and no-host evidence checks also passed. The reviewed code-only Data distribution is public; narrow native evidence acceptance is checked separately."
     },
     {
       "name": "Native host acceptance",
@@ -62,9 +62,9 @@
     {
       "name": "Storage ownership and runtime",
       "command": "python3 skills/memory/scripts/runtime_doctor.py",
-      "expected": "Identify the separately owned private foundation and native durability.",
+      "expected": "Identify the independently released Data foundation and native durability.",
       "status": "passed",
-      "evidence": "Actual amplifier-data 0.2.0 Rust kernel installed locally; no user store opened or migrated. Public source access remains unavailable."
+      "evidence": "Public amplifier-data 0.2.0 Rust kernel resolves without credentials; original private source/history and all existing stores remain untouched."
     }
   ],
   "sources": [
@@ -86,7 +86,61 @@
   ],
   "docs": [
     "docs/CONSOLIDATION.md",
-    "docs/LEGACY-STORES.md"
+    "docs/LEGACY-STORES.md",
+    "docs/NATIVE-QUICKSTART.md"
   ],
-  "publication_status": "Installation and evidence scopes are documented below."
+  "publication_status": "Installation and evidence scopes are documented below.",
+  "repository_url": "https://github.com/michaeljabbour/amplifier-skill-memory",
+  "marketing": {
+    "headline": "Pick up the evidence, not just the summary.",
+    "lead": "Keep scoped source notes, find them in a later session and trace derived facts back to what was actually recorded. Start with a small explicit evidence CLI; add automatic capture only when you need it.",
+    "benefits": [
+      {
+        "title": "Return to the source",
+        "body": "Store verbatim evidence with project scope and provenance so a later answer can cite the record behind it."
+      },
+      {
+        "title": "Keep changes inspectable",
+        "body": "Separate evidence from derived facts and navigation. Supersede a stale fact while retaining the evidence trail."
+      },
+      {
+        "title": "Start without a model",
+        "body": "The explicit native evidence CLI saves and searches local notes without a host, background daemon or embedding model."
+      }
+    ],
+    "walkthrough": [
+      {
+        "title": "Keep one useful note",
+        "detail": "File a fictional parser-check note in a named project and room. Record where it came from rather than saving a conclusion without context."
+      },
+      {
+        "title": "Find it in a later process",
+        "detail": "Search the same native log for parser. Lexical/BM25 retrieval returns matching evidence and its reference without asking a model to reconstruct the past."
+      },
+      {
+        "title": "Review what changed",
+        "detail": "Read the source before treating an old claim as current. Derived facts cite evidence; later facts supersede earlier ones without erasing the original record."
+      }
+    ],
+    "use_when": [
+      "A later session needs the exact project note behind a decision.",
+      "You need evidence, derived facts and navigation to stay distinguishable.",
+      "You want scoped local records you can inspect and preserve."
+    ],
+    "not_for": [
+      "You only need to pass the next task between agents: Project Handoff is a smaller starting point.",
+      "You need physical deletion simply by invalidating a fact.",
+      "You expect installing a method folder to activate automatic memory or migrate existing stores."
+    ],
+    "quickstart_prompt": "Use Memory to review this project note. Preserve the exact source, its project scope and the date. Separate observed evidence from any derived claim. Show what needs rechecking before we rely on it today.",
+    "output_preview": "Project: fictional-parser\nEvidence: \"Parser check remains unverified.\"\nSource: fictional-note\n\nLater retrieval:\n  exact source text + content reference\n  scoped to this project\n\nCurrent truth: recheck before relying on it",
+    "example_note": "This fictional example shows the evidence trail. The native quickstart lets you test a real local save and fresh-process search with temporary fictional data.",
+    "install_notes": [
+      "The portable skill is guidance. It installs without a database or Memory runtime.",
+      "For a working native save/search check, follow docs/NATIVE-QUICKSTART.md. Python 3.11+, Rust and a native compiler are needed for source Data installs.",
+      "The reviewed public Data library stays independent. Existing stores are never discovered or migrated by installation."
+    ],
+    "proof_summary": "The public native path is checked with temporary evidence, two scoped consumers, regeneration and durable restart. Full embedding, host and live-task acceptance remain separate; historical retrieval results keep their original protocol limits.",
+    "next_step": "Choose the portable guidance or the native quickstart. Save one fictional note first, then verify you can find the same words in a fresh process."
+  }
 }

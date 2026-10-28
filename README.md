@@ -2,6 +2,12 @@
 
 Keep scoped evidence and derived facts retrievable beyond one agent session.
 
+## Try it on your own project
+
+Use the [native quickstart](docs/NATIVE-QUICKSTART.md) to save a source note, close the process, and find the same words again. The small evidence CLI works without an AI model, Amplifier host or background daemon. It uses the independently released [Amplifier Data library](https://github.com/michaeljabbour/amplifier-tool-data).
+
+For agent guidance only, install the portable method below. For automatic capture, embedding search and session briefings, use the optional Amplifier integration in the retained guide. These are separate installation choices.
+
 ## Consolidated capability
 
 Portable method: [skills/memory/SKILL.md](skills/memory/SKILL.md). Install with `python3 scripts/capability.py install --dest ~/.agents/skills`. See [consolidation and runtime boundaries](docs/CONSOLIDATION.md). The retained source guide below documents the optional original host integration and historical evidence; it is not a new outcome claim.
@@ -216,7 +222,7 @@ amplifier run "start a session"
 > toolchain is the install-time prerequisite; installing this bundle's
 > pinned amplifier-data git dependency builds it automatically via maturin).
 
-> **Existing stores:** an explicit read-only archive bridge supports Project Memory SQLite schema 1's three source tables. It preserves every row, column and SQLite value type, then can file opaque archival records into a **new** native log through the installed Memory/Data APIs. It does not adopt facts or convert behavior. Standalone/vendor stores remain unsupported; the former vendor importer and migration extra were removed. Follow the [legacy-store and export boundaries](docs/LEGACY-STORES.md). The separate native evidence-view export is not a full-fidelity backup. Public native import still needs the separately owned Data distribution; publishing this portable method does not make private Data available.
+> **Existing stores:** an explicit read-only archive bridge supports Project Memory SQLite schema 1's three source tables. It preserves every row, column and SQLite value type, then can file opaque archival records into a **new** native log through the installed Memory/Data APIs. It does not adopt facts or convert behavior. Standalone/vendor stores remain unsupported; the former vendor importer and migration extra were removed. Follow the [legacy-store and export boundaries](docs/LEGACY-STORES.md). The separate native evidence-view export is not a full-fidelity backup. The native path now resolves the reviewed public Data release. Installation still never discovers or migrates an existing store.
 
 ---
 

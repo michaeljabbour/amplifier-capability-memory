@@ -1,3 +1,7 @@
+# Public Data release — 2026-10-28
+
+The owner explicitly approved the reviewed clean Data export. The native module and all six sibling modules now pin public amplifier-tool-data at 4045064 in lockstep, including module locks. docs/NATIVE-QUICKSTART.md documents the narrow no-model evidence path. Original private Data source/history and all user stores remain untouched. Full embedding/host acceptance remains a separate gate.
+
 # Consolidation handoff — 2026-10-28
 
 Memory remains a consumer of the separately owned amplifier-data substrate. No data is migrated and no replacement storage implementation ships in this skill. A private-source foundation integration gate remains explicit. A SQLite prototype was moved outside the target and is not a product backend. The portable method now distinguishes evidence, facts and navigation and removes unsupported fresh retrieval claims. Original native modules and historical records are retained below.

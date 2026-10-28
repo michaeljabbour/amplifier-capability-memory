@@ -15,7 +15,7 @@ def main():
             'foundation_version':version,'durable_native_kernel':native,'native_evidence_ready':foundation and native,
             'requires_host_for_evidence_cli':False,'requires_model_for_lexical_evidence':False,
             'opened_user_store':False,'migration_performed':False,
-            'foundation_access':'Separate private amplifier-data source or an authorized distribution is required; this package does not change its visibility.',
+            'foundation_access':'Independent public distribution: https://github.com/michaeljabbour/amplifier-tool-data; original private source/history remains private.',
             'scope':'Checks substrate presence/native availability. Host hooks, daemon, embeddings and live task acceptance require separate checks.'}
     print(json.dumps(result,indent=2));return 0 if result['native_evidence_ready'] else 2
 

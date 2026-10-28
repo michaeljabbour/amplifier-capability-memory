@@ -631,3 +631,8 @@ product-side trap to close.
 cost for the query) to bring LoCoMo tokens under 50% of A without losing QA;
 tune on subsets only.
 **Status:** derived.
+
+
+## Public source dependency — 2026-10-28
+
+Following explicit owner approval, the seven-module Data pin moved to the reviewed code-only public export at 40450647367db2a2b5058bea1d81a6d248c24c94. This is a distribution boundary change, with stable amplifier_data imports and no replacement backend. The original private repository and history remain private. Native quickstart checks use only temporary fictional stores.

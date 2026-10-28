@@ -1,6 +1,6 @@
 # Existing stores and export boundaries
 
-The portable Memory method installs independently. Its native execution backend uses the separately owned amplifier-data foundation. A clean public Data export is under owner review; the original private repository and history remain private. No old store is discovered, opened or converted by installing the method.
+The portable Memory method installs independently. Its native execution backend uses the separately owned amplifier-data foundation. The reviewed code-only Data distribution is public at [amplifier-tool-data](https://github.com/michaeljabbour/amplifier-tool-data); the original private repository and history remain private. No old store is discovered, opened or converted by installing the method.
 
 | Store | Existing format/location | Supported transition in this release |
 |---|---|---|
@@ -15,7 +15,7 @@ Do not use the old Project Memory `MemoryStore` constructor as a supposedly read
 
 The supported `memory-evidence --store PATH export --wing WING [--room ROOM]` emits `memory-evidence-view/1`. It returns at most 10,000 drawers within the selected scope. It is not a full-fidelity native log backup, a complete graph/event export, a legacy SQLite reader, or proof that all data was transferred. Keep the source log and verify any destination separately. Search/export use `record_access=False`; that alone is not an immutable-storage or physical-deletion guarantee.
 
-Do not retire old storage code merely because the new method is published. Retirement requires the Data distribution decision, an independently installable native path, an identified consumer/store inventory, a tested applicable export/import path and an owner-reviewed rollback. Existing data and historical implementations remain available until those gates are met.
+Do not retire old storage code merely because the new method is published. Retirement requires an independently installable native path, an identified consumer/store inventory, a tested applicable export/import path and a retained rollback. The old Project Memory source remains available read-only in its archived repository; archiving its code does not migrate or delete any installed store. A user migration still requires an explicit source/destination decision.
 
 ## Explicit Project Memory schema-1 bridge
 
