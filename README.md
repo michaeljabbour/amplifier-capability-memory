@@ -2,6 +2,8 @@
 
 Keep scoped evidence and derived facts retrievable beyond one agent session.
 
+Watch the [64-second film](https://michaeljabbour.github.io/amplifier-skill-memory/#film): a vendor's exact words, kept with where they came from and handed back weeks later. The example in it is fictional.
+
 ## Try it on your own project
 
 Use the [native quickstart](docs/NATIVE-QUICKSTART.md) to save a source note, close the process, and find the same words again. The small evidence CLI works without an AI model, Amplifier host or background daemon. It uses the independently released [Amplifier Data library](https://github.com/michaeljabbour/amplifier-tool-data).

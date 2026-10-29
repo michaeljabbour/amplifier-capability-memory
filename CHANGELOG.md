@@ -1,5 +1,9 @@
 # Changelog
 
+## Film — 2026-10-28
+
+- Add a 64-second film to the site, with captions, a transcript, a poster and a 15-second cut. The example in it is fictional, and it reports no results.
+
 ## Public Data distribution — 2026-10-28
 
 - Clarified platform scopes: Data has macOS and Ubuntu native acceptance; the complete Memory evidence quickstart was checked on macOS only. Ubuntu contract tests are separate from native Memory runtime acceptance.
