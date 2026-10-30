@@ -5,7 +5,7 @@ requires-python = ">=3.11"
 [[package]]
 name = "amplifier-data"
 version = "0.2.0"
-source = { git = "https://github.com/michaeljabbour/amplifier-tool-data?rev=40450647367db2a2b5058bea1d81a6d248c24c94#40450647367db2a2b5058bea1d81a6d248c24c94" }
+source = { git = "https://github.com/michaeljabbour/amplifier-capability-data?rev=40450647367db2a2b5058bea1d81a6d248c24c94#40450647367db2a2b5058bea1d81a6d248c24c94" }
 
 [[package]]
 name = "amplifier-module-hooks-behavioral-write"
@@ -22,7 +22,7 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "amplifier-data", git = "https://github.com/michaeljabbour/amplifier-tool-data?rev=40450647367db2a2b5058bea1d81a6d248c24c94" }]
+requires-dist = [{ name = "amplifier-data", git = "https://github.com/michaeljabbour/amplifier-capability-data?rev=40450647367db2a2b5058bea1d81a6d248c24c94" }]
 
 [package.metadata.requires-dev]
 dev = [

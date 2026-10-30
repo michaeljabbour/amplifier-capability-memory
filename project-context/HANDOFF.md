@@ -1,3 +1,11 @@
+# Dependency locator upkeep — 2026-10-30
+
+All seven modules and their lockfiles now use the canonical Data repository URL.
+The existing full commit40450647367db2a2b5058bea1d81a6d248c24c94 and all package,
+import and entrypoint names remain fixed. The local core contract suite passed13tests.
+No dependency resolution, daemon, store migration or model run was performed.
+Keep the seven source declarations and lockfiles synchronized in future changes.
+
 # Public Data release — 2026-10-28
 
 The owner explicitly approved the reviewed clean Data export. The native module and all six sibling modules now pin public amplifier-tool-data at 4045064 in lockstep, including module locks. docs/NATIVE-QUICKSTART.md documents the narrow no-model evidence path. Original private Data source/history and all user stores remain untouched. Full embedding/host acceptance remains a separate gate.

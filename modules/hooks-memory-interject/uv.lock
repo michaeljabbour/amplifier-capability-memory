@@ -9,7 +9,7 @@ resolution-markers = [
 [[package]]
 name = "amplifier-data"
 version = "0.2.0"
-source = { git = "https://github.com/michaeljabbour/amplifier-tool-data?rev=40450647367db2a2b5058bea1d81a6d248c24c94#40450647367db2a2b5058bea1d81a6d248c24c94" }
+source = { git = "https://github.com/michaeljabbour/amplifier-capability-data?rev=40450647367db2a2b5058bea1d81a6d248c24c94#40450647367db2a2b5058bea1d81a6d248c24c94" }
 
 [[package]]
 name = "amplifier-module-hooks-memory-interject"
@@ -30,7 +30,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "amplifier-data", git = "https://github.com/michaeljabbour/amplifier-tool-data?rev=40450647367db2a2b5058bea1d81a6d248c24c94" },
+    { name = "amplifier-data", git = "https://github.com/michaeljabbour/amplifier-capability-data?rev=40450647367db2a2b5058bea1d81a6d248c24c94" },
     { name = "openai", specifier = ">=1.0.0" },
 ]
 
