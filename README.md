@@ -355,3 +355,7 @@ See [docs/development/dtu.md](docs/development/dtu.md) for:
 ## License
 
 MIT
+
+## Repository migration
+
+This repository was renamed from `amplifier-skill-memory` to `amplifier-capability-memory`. Existing installed method names, bundle aliases and native interfaces stay the same. See the [migration guide](https://michaeljabbour.github.io/migration/) and [repository map](https://michaeljabbour.github.io/migration/mapping.json) for source URL updates.
