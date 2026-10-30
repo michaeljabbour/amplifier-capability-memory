@@ -90,7 +90,7 @@
     "docs/NATIVE-QUICKSTART.md"
   ],
   "publication_status": "Installation and evidence scopes are documented below.",
-  "repository_url": "https://github.com/michaeljabbour/amplifier-skill-memory",
+  "repository_url": "https://github.com/michaeljabbour/amplifier-capability-memory",
   "marketing": {
     "headline": "Pick up the evidence, not just the summary.",
     "lead": "Keep scoped source notes, find them in a later session and trace derived facts back to what was actually recorded. Start with a small explicit evidence CLI; add automatic capture only when you need it.",
@@ -143,11 +143,91 @@
     "proof_summary": "The public native path is checked with temporary evidence, two scoped consumers, regeneration and durable restart. Full embedding, host and live-task acceptance remain separate; historical retrieval results keep their original protocol limits.",
     "next_step": "Choose the portable guidance or the native quickstart. Save one fictional note first, then verify you can find the same words in a fresh process."
   },
+  "name": "amplifier-capability-memory",
+  "legacy_names": [
+    "amplifier-skill-memory",
+    "memory"
+  ],
+  "contract_version": "amplifier-capability/v1",
+  "version": "0.0.0",
+  "version_basis": "Existing release metadata",
+  "engine": "LLM",
+  "engine_components": {
+    "caller_method": "LLM"
+  },
+  "surfaces": [
+    "agent-skills",
+    "amplifier-bundle",
+    "python-library"
+  ],
+  "portable_method": {
+    "name": "memory",
+    "path": "skills/memory",
+    "include": [
+      "."
+    ],
+    "contract": "Agent Skills directory; caller applies the method; no independent execution loop is installed."
+  },
+  "interfaces": {
+    "portable": {
+      "input": "Caller task and explicitly authorized context",
+      "output": "Keep scoped evidence and derived facts retrievable beyond one agent session.",
+      "failure": "Report insufficient evidence, unsupported context or host limitation; never turn discovery into an execution claim."
+    },
+    "native": {
+      "distribution": "amplifier-bundle-memory-tests",
+      "entrypoints": {},
+      "docs": [
+        "docs/CONSOLIDATION.md",
+        "docs/LEGACY-STORES.md",
+        "docs/NATIVE-QUICKSTART.md"
+      ],
+      "status": "Existing declared entrypoints preserved; runtime signatures, service access and installation tests remain separate evidence."
+    },
+    "host_adapters": {
+      "amplifier_bundle": "bundle.md",
+      "grants_autonomy": false
+    }
+  },
+  "permissions": {
+    "installation": {
+      "network": false,
+      "executes_capability_code": false,
+      "writes": [
+        "Selected discovery folders",
+        ".capability-state transaction backups"
+      ],
+      "grants_runtime_permissions": false
+    },
+    "runtime": {
+      "status": "Host/caller authorizes each operation; installation is not a tool allowlist or standing approval.",
+      "declared_boundaries": [
+        "Portable method installation is independent; native persistence depends on the separate amplifier-data substrate and supported adapters."
+      ]
+    },
+    "secret_names": {
+      "discovery_requires": [],
+      "native_runtime_inventory": "See native documentation; no credentials are bundled or inferred."
+    }
+  },
+  "dataflow": {
+    "installation": "Read pinned tracked portable source and copy locally with SHA-256 receipts. No source text is transmitted.",
+    "method": "Caller supplies authorized context; existing promise and boundaries govern output.",
+    "native_runtime": "Provider/network/storage flows are owned by native interfaces and host authorization; these files do not enable them."
+  },
+  "source_policy": {
+    "revision": "Explicit full40-character Git commit required at installation; never infer latest.",
+    "repository_rename": "Public identity may change; skill folder, imports, entrypoints, tool IDs and schemas remain stable.",
+    "research": ".research/market remains local and ignored; AGENTS governs refresh."
+  },
   "film": {
     "file": "memory-film",
     "seconds": 64,
     "heading": "The words just traveled.",
     "blurb": "In 64 seconds, a vendor promise turns into a myth by spring, and a houseplant named Fern pays for it. Then Memory keeps the first words with their project, call and date, hands them back weeks later, and links a newer fact to its source without throwing the old one away. Captions are on the player; a transcript is below.",
     "note": "Fern, the vendor and the call are a fictional example. The film shows how the skill behaves; it does not report results."
-  }
+  },
+  "repository_aliases": [
+    "https://github.com/michaeljabbour/amplifier-skill-memory"
+  ]
 }
