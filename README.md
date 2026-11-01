@@ -2,7 +2,7 @@
 
 Keep scoped evidence and derived facts retrievable beyond one agent session.
 
-Watch the [64-second film](https://michaeljabbour.github.io/amplifier-skill-memory/#film): a vendor's exact words, kept with where they came from and handed back weeks later. The example in it is fictional.
+Watch the [64-second film](https://michaeljabbour.github.io/amplifier-capability-memory/#film): a vendor's exact words, kept with where they came from and handed back weeks later. The example in it is fictional.
 
 ## Try it on your own project
 
