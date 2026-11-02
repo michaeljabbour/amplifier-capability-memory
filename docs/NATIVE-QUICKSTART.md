@@ -11,8 +11,8 @@ Start in an empty directory. These commands create a new virtual environment and
 ```sh
 python3 -m venv .venv
 . .venv/bin/activate
-python3 -m pip install 'git+https://github.com/michaeljabbour/amplifier-tool-data@40450647367db2a2b5058bea1d81a6d248c24c94'
-python3 -m pip install --no-deps 'git+https://github.com/michaeljabbour/amplifier-skill-memory@main#subdirectory=modules/tool-memory'
+python3 -m pip install 'git+https://github.com/michaeljabbour/amplifier-capability-data@40450647367db2a2b5058bea1d81a6d248c24c94'
+python3 -m pip install --no-deps 'git+https://github.com/michaeljabbour/amplifier-capability-memory@main#subdirectory=modules/tool-memory'
 amplifier-data-doctor --self-test
 memory-evidence --store ./fictional-quickstart.log remember --wing fictional-project --room decisions --content 'Fictional parser check remains unverified.' --source fictional-note
 memory-evidence --store ./fictional-quickstart.log search --wing fictional-project --query parser

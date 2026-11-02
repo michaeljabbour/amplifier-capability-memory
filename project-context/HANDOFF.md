@@ -1,3 +1,7 @@
+# Staged evidence CLI validation — 2026-11-02
+
+The review candidate rejects blank required scope identifiers before creating a store. Nonblank Unicode/internal-space identifiers are preserved. Focused fictional preflight tests use a fake store; separate native restart checks are reported in the private campaign, not inferred from these unit tests. No real store, daemon or provider is used or changed. Canonical first-use repository links preserve existing package names and the tested Data source pin. Broader retrieval, answer quality and outside-use claims remain unmeasured by this change.
+
 # Dependency locator upkeep — 2026-10-30
 
 All seven modules and their lockfiles now use the canonical Data repository URL.

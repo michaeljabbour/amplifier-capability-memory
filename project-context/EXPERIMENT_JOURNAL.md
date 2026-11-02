@@ -1,5 +1,9 @@
 # Experiment Journal
 
+## 2026-11-02 — staged evidence CLI preflight
+
+Three focused unit methods exercise blank required/supplied scope identifiers and a nonblank Unicode/internal-space control. The store is mocked for these preflight checks; they do not establish retrieval, persistence, authorization or answer quality. The previous source accepted the invalid identifiers, while the staged guard stops before construction. A separate no-model fictional native replay checks two scoped positive recalls and fresh-process use; no live daemon, embedding model, paid provider or user data is involved. Comparison and outside-user outcomes remain unmeasured.
+
 ## 2026-09-30 — P8 follow-up: D13 campaign #4 (context expansion: rank on passages, read on neighbourhoods)
 
 **Hypothesis (D34):** C misses multi-session answers because a few ~300-token

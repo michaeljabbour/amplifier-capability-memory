@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased — evidence CLI scope preflight
+
+- Reject blank required wing and explicitly supplied blank room identifiers before opening a native log. Preserve valid identifiers, including Unicode and internal spaces; scope selection is not an authorization boundary.
+- Point first-use native links at canonical capability repositories without changing the tested Data pin, package/import names or optional host integration.
+
 ## Unreleased — optional coaching checkpoint
 
 - Add a self-contained opt-in practice/review guide with a fictional task, preserved baseline, explicit scope/budget, user stop, reviewed keep/revert and private-by-choice records. Keep native operations, existing method budgets and evidence rules unchanged; no human efficacy or outside-use result is claimed.

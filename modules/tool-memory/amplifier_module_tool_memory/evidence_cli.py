@@ -14,6 +14,8 @@ def main(argv=None):
         if name=='remember':q.add_argument('--content',required=True);q.add_argument('--source',default='')
         if name=='search':q.add_argument('--query',required=True);q.add_argument('--limit',type=int,default=5)
     a=p.parse_args(argv)
+    if not a.wing.strip():p.error('Nonempty --wing scope required')
+    if a.room is not None and not a.room.strip():p.error('Supplied --room scope must be nonempty')
     if a.operation=='remember' and (not a.room or len(a.content)>8192):p.error('Remember needs --room and content at most 8192 characters')
     if a.operation=='search' and (not a.query.strip() or not 1<=a.limit<=50):p.error('Nonempty query and limit 1..50 required')
     store=None

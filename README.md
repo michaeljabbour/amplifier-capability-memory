@@ -6,7 +6,7 @@ Watch the [64-second film](https://michaeljabbour.github.io/amplifier-capability
 
 ## Try it on your own project
 
-Use the [native quickstart](docs/NATIVE-QUICKSTART.md) to save a source note, close the process, and find the same words again. The small evidence CLI works without an AI model, Amplifier host or background daemon. It uses the independently released [Amplifier Data library](https://github.com/michaeljabbour/amplifier-tool-data).
+Use the [native quickstart](docs/NATIVE-QUICKSTART.md) to save a source note, close the process, and find the same words again. The small evidence CLI works without an AI model, Amplifier host or background daemon. It uses the independently released [Amplifier Data library](https://github.com/michaeljabbour/amplifier-capability-data).
 
 For agent guidance only, install the portable method below. For automatic capture, embedding search and session briefings, use the optional Amplifier integration in the retained guide. These are separate installation choices.
 
